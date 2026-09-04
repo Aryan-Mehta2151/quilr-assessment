@@ -1,0 +1,17 @@
+{
+  "name": "task2-mcp-gateway",
+  "version": "1.0.0",
+  "description": "MCP security gateway proxy: bearer-token role auth + tool-name authorization",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "start:downstream": "node dist/run-downstream.js",
+    "start:gateway": "node dist/run-gateway.js",
+    "test": "tsx test/gateway.test.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "tsx": "^4.16.5",
+    "@types/node": "^20.14.13"
+  }
+}

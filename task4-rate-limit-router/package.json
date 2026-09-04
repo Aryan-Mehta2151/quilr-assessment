@@ -1,0 +1,21 @@
+{
+  "name": "task4-rate-limit-router",
+  "version": "1.0.0",
+  "description": "Token-aware sliding window rate limiter + model fallback router for an LLM gateway",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "start:primary": "node dist/run-provider.js primary",
+    "start:secondary": "node dist/run-provider.js secondary",
+    "test": "tsx test/rate-limiter.test.ts && tsx test/router.test.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "tsx": "^4.16.5",
+    "@types/node": "^20.14.13",
+    "@types/better-sqlite3": "^7.6.11"
+  }
+}

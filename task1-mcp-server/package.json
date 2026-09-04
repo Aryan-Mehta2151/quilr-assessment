@@ -1,0 +1,22 @@
+{
+  "name": "task1-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server exposing get_customer_record and trigger_refund tools over stdio",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "tsx test/stdio.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "tsx": "^4.16.5",
+    "@types/node": "^20.14.13"
+  }
+}

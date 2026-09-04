@@ -1,0 +1,17 @@
+{
+  "name": "task3-streaming-guardrail",
+  "version": "1.0.0",
+  "description": "LLM gateway streaming proxy with real-time PII redaction",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "start:llm": "node dist/run-llm-mock.js",
+    "start:gateway": "node dist/run-gateway.js",
+    "test": "tsx test/redactor.test.ts && tsx test/stream.test.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "tsx": "^4.16.5",
+    "@types/node": "^20.14.13"
+  }
+}
